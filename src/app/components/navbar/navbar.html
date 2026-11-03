@@ -1,1 +1,30 @@
-<p>navbar works!</p>
+<nav id="navbar">
+    <div class="nav-wrapper">
+        <a href="#navbar" class="brand-logo right">American Refacciones</a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
+
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#navbar">Inicio</a></li>
+            <li><a href="#slider">Ver más</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#footer">Footer</a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+            <a href="#navbar"><img class="circle" src="/img/americanRef.png" alt="American Refacciones" /></a>
+        </div>
+    </li>
+    <li><a class="waves-effect" href="#navbar"><i class="material-icons">home</i>Inicio</a></li>
+    <li><a class="waves-effect" href="#slider"><i class="material-icons">library_books</i>{{ catalogo }}</a></li>
+    <li><a class="waves-effect" href="#productos"><i class="material-icons">build</i>{{ inscripciones
+            }}</a></li>
+    <li><a class="waves-effect" href="#contacto"><i class="material-icons">call</i>{{ contacto }}</a></li>
+    <li><a class="waves-effect" href="#footer"><i class="material-icons">info</i>{{ footer }}</a></li>
+</ul>
