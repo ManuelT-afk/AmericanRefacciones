@@ -29,6 +29,14 @@ export class Navbar implements AfterViewInit, OnInit {
       edge: 'left',
       draggable: true
     });
+  }
 
+  abrirMenu(event: Event): void {
+    event.preventDefault();
+    const elem = document.getElementById('slide-out');
+    if (elem) {
+      const instance = M.Sidenav.getInstance(elem) || M.Sidenav.init(elem);
+      instance.open();
+    }
   }
 }

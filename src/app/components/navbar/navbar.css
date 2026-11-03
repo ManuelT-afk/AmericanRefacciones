@@ -3,7 +3,7 @@
 }
 
 nav {
-    background: #94a336;
+    background: #080d37;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -26,7 +26,7 @@ nav .nav-wrapper {
 .brand-logo .logo-nav,
 .brand-logo img {
     max-height: 44px;
-    color: white;
+    filter: brightness(0) invert(1);
     width: auto;
     object-fit: contain;
     vertical-align: middle;
@@ -88,7 +88,7 @@ ul li a {
 
 @media (max-width: 992px) {
     .sidenav-trigger {
-        display: inline-flex;
+        display: inline-flex !important;
         align-items: center;
         justify-content: center;
     }
