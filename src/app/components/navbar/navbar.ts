@@ -1,5 +1,5 @@
 import { Component, signal, AfterViewInit, OnInit } from '@angular/core';
-import $ from 'Jquery';
+import $ from 'jquery';
 declare const M: any;
 
 @Component({
@@ -14,7 +14,7 @@ export class Navbar implements AfterViewInit, OnInit {
   slider = 'Ver mas';
   productos = 'Productos';
   contacto = 'Contacto';
-  footer = 'Redes Sociales';
+  footer = 'Redes Sociales'; 
 
 
   ngOnInit(): void {
