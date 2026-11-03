@@ -14,23 +14,21 @@ export class Navbar implements AfterViewInit, OnInit {
   slider = 'Ver mas';
   productos = 'Productos';
   contacto = 'Contacto';
-  footer = 'Redes Sociales'; 
+  footer = 'Redes Sociales';
 
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+
   }
 
 
 
   ngAfterViewInit(): void {
-    const sidenavEls = document.querySelectorAll('.sidenav');
-
-    if (typeof M !== 'undefined' && sidenavEls.length > 0) {
-      M.AutoInit();
-      M.Sidenav.init(sidenavEls, { edge: 'left' });
-
-    }
+    const sidenav = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sidenav, {
+      edge: 'left',
+      draggable: true
+    });
 
   }
 }

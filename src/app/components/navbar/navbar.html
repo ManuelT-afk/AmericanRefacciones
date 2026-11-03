@@ -1,7 +1,12 @@
 <nav id="navbar">
     <div class="nav-wrapper">
-        <a href="#navbar" class="brand-logo right">American Refacciones</a>
-        <a href="#" data-target="slide-out" class="sidenav-trigger">
+        <a href="#navbar" class="brand-logo right">
+            <img src="/img/americanRef.png" class="logo-nav">
+            <span>American Refacciones</span>
+        </a>
+
+        <!-- Enlace con control de evento explícito -->
+        <a href="#!" (click)="abrirMenu($event)" data-target="slide-out" class="sidenav-trigger">
             <i class="material-icons">menu</i>
         </a>
 
@@ -17,14 +22,13 @@
 
 <ul id="slide-out" class="sidenav">
     <li>
-        <div class="user-view"> 
+        <div class="user-view">
             <a href="#navbar"><img class="circle" src="/img/americanRef.png" alt="American Refacciones" /></a>
         </div>
     </li>
-    <li><a class="waves-effect" href="#navbar"><i class="material-icons">home</i>{{navbar}}</a></li>
+    <li><a class="waves-effect" href="#navbar"><i class="material-icons">home</i>{{ navbar }}</a></li>
     <li><a class="waves-effect" href="#slider"><i class="material-icons">library_books</i>{{ slider }}</a></li>
-    <li><a class="waves-effect" href="#productos"><i class="material-icons">build</i>{{ productos
-            }}</a></li>
+    <li><a class="waves-effect" href="#productos"><i class="material-icons">build</i>{{ productos }}</a></li>
     <li><a class="waves-effect" href="#contacto"><i class="material-icons">call</i>{{ contacto }}</a></li>
     <li><a class="waves-effect" href="#footer"><i class="material-icons">info</i>{{ footer }}</a></li>
 </ul>
